@@ -1,0 +1,1032 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: "Quicksand", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+  width: 100%;
+  min-width: 320px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  overflow-x: hidden;
+  position: relative;
+}
+
+header {
+  display: table;
+  position: fixed;
+}
+
+@media screen and (max-width: 769px) {
+  .header-content {
+    position: fixed;
+    width: 100%;
+    height: 7.5vw;
+    top: 0;
+    left: 0;
+    min-width: 320px;
+    background: transparent;
+    text-align: center;
+    z-index: 1001;
+  }
+
+  .header-desktop1 {
+    display: none;
+  }
+
+  .header-two .logo {
+    display: none;
+  }
+
+  .header-two {
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    top: 0;
+    clip-path: circle(0 at top right);
+    transition: clip-path ease-in-out 700ms;
+    z-index: 99;
+  }
+
+  .header-two.open {
+    clip-path: circle(250% at top right);
+  }
+
+  .header-two ul {
+    list-style: none;
+    padding: 24px;
+    margin-top: -20px;
+  }
+
+  .header-two li {
+    padding-block: 15px;
+    text-align: center;
+  }
+
+  .partners li {
+    padding: 15px;
+    margin-top: -8px;
+  }
+
+  .header-two li:nth-child(1) {
+    padding-top: 50px;
+  }
+
+  .header-two .menu-item {
+    font-family: "Quicksand", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration-line: none;
+    color: #710879;
+    text-align: center;
+  }
+
+  .nav-item1 {
+    display: block;
+    border: 3px solid #6a1170b5;
+    padding: 12px 17px;
+  }
+
+  .header-two .concert {
+    transition: ease-in 200ms;
+    display: block;
+    color: #c872ce;
+  }
+
+  .header-two .worldTour-logo {
+    display: none;
+  }
+
+  .close-btn {
+    display: block;
+    position: fixed;
+    height: 22px;
+    width: 33px;
+    border: none;
+    background: transparent;
+    margin-left: 8px;
+    margin-top: 11px;
+  }
+
+  .hamburger-btn {
+    display: block;
+    width: 73px;
+    height: 51px;
+    background-image: url(./assets/img/hamburger-btn.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-color: transparent;
+    border: none;
+    z-index: 1;
+  }
+
+  .home {
+    background-image: url(./assets/img/peakpx.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    height: 100%;
+    width: 100%;
+    min-width: 320px;
+    padding: 60px 43px;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+    color: #d3d3d3;
+  }
+
+  .presentation {
+    display: block;
+    width: 100%;
+    padding-top: 10.69vw;
+    padding-right: 0;
+    color: rgb(252, 252, 252);
+    margin-left: -10.25vw;
+  }
+
+  .venue {
+    font-size: 0.8em;
+    font-weight: 500;
+    margin: -15px;
+    margin-left: -2px;
+    max-width: 800px;
+    padding: 20px;
+    margin-top: -14px;
+  }
+
+  .text {
+    font-size: 0.9em;
+    font-weight: 500;
+    margin: -17px;
+    margin-left: 17px;
+    max-width: 800px;
+    border: 3px solid white;
+    padding: 20px;
+    margin-top: 2px;
+  }
+
+  .presentation h1 {
+    display: block;
+    font-size: 1.7em;
+    font-weight: 800;
+    margin-top: -33px;
+    margin-left: 14px;
+  }
+
+  .presentation h2 {
+    display: block;
+    font-size: 2.5em;
+    font-weight: 800;
+    margin-top: 2px;
+    margin-left: 14px;
+  }
+
+  .presentation h3 {
+    display: block;
+    font-size: 1.5em;
+    font-weight: 800;
+    margin-top: 22px;
+    margin-left: 19px;
+    color: #dda7c7;
+  }
+
+  .schedule {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    background-image: url("./assets/img/Main-bg.png");
+  }
+
+  .schedule span {
+    width: 8%;
+    height: 4px;
+    border-radius: 4px;
+    background: #530459;
+    margin: 8px;
+  }
+
+  .schedule h2 {
+    color: #530459;
+    font-family: "Quicksand", sans-serif;
+    font-size: 1.3em;
+    margin: 12px;
+    margin-left: 13px;
+    margin-top: 17px;
+  }
+
+  .schedule h3 {
+    color: #530459;
+    font-family: "Quicksand", sans-serif;
+    font-size: 0.8em;
+    margin: 12px;
+    margin-left: -5px;
+  }
+
+  footer p {
+    color: #530459;
+    font-size: 0.7em;
+    font-family: "Quicksand", sans-serif;
+    font-weight: bold;
+    margin-right: 28px;
+    text-align: center;
+  }
+
+  .schedule p {
+    color: #530459;
+    font-family: "Quicksand", sans-serif;
+    font-size: 0.9em;
+    margin: 8px;
+    margin-left: 0;
+    width: 156px;
+  }
+
+  .program {
+    margin-bottom: -3px;
+    display: flex;
+    align-items: center;
+    background: #edb2d5a8;
+    border-radius: 10px;
+    margin-top: 13px;
+  }
+
+  .img2 {
+    background-color: transparent;
+    padding: 15px;
+    height: 71px;
+    width: auto;
+    margin-left: -7px;
+  }
+
+  .img1 {
+    background-color: transparent;
+    padding: 5px;
+    height: 68px;
+    width: auto;
+    margin-left: -4px;
+  }
+
+  .schedule a {
+    display: inline-block;
+    margin: 24px auto;
+    text-decoration: none;
+    color: #fff;
+    padding: 9px;
+    background: #530459;
+    margin-bottom: 30px;
+    text-align: center;
+    width: 215px;
+  }
+
+  .gm-section {
+    padding: 20px;
+    display: block;
+  }
+
+  .global-section h3 {
+    text-align: center;
+    font-family: "Quicksand", sans-serif;
+    font-size: 1.5em;
+    margin-top: 12px;
+    color: #530459;
+    margin-bottom: 15px;
+  }
+
+  .global-section hr {
+    width: 50px;
+    margin: auto;
+  }
+
+  footer img {
+    padding: 30px;
+    height: 140px;
+    width: auto;
+  }
+
+  .group-member img {
+    padding: 10px;
+    height: 172px;
+    width: 188px;
+    margin-top: 46px;
+    margin-left: 8px;
+  }
+
+  .text-content {
+    padding-left: 1em;
+    margin-left: 189px;
+    margin-top: -188px;
+    margin-bottom: 20px;
+  }
+
+  .text-content hr {
+    width: 30px;
+    margin: 13px 1px;
+  }
+
+  .text-content h3 {
+    font-family: "Quicksand", sans-serif;
+    font-size: 1.3em;
+    text-align: left;
+  }
+
+  .text-content .italic-text {
+    color: #dda7c7;
+    margin-top: 7px;
+  }
+
+  .text-content p {
+    font-size: 0.84em;
+    margin-top: 18px;
+  }
+
+  .partners {
+    background-color: #530459;
+    text-align: center;
+    font-family: "Quicksand", sans-serif;
+    font-size: 1.5em;
+    margin-top: 50px;
+  }
+
+  .partners-title {
+    color: #d3d3d3;
+    margin: -8px;
+    padding-block: 18px 20px;
+  }
+
+  .partners hr {
+    width: 40px;
+    color: #d3d3d3;
+    margin: auto;
+  }
+
+  .partners ul {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+  }
+
+  .partners img {
+    height: 50px;
+    width: 134px;
+    background: transparent;
+  }
+
+  footer {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .head-one {
+    display: none;
+  }
+
+  .about-section {
+    background-image: url(./assets/img/peakpx.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    min-width: 320px;
+    padding: 60px 43px;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+    color: #d3d3d3;
+  }
+
+  .about-section-content {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+    color: #d3d3d3;
+  }
+
+  .about-section h1 {
+    font-family: "Quicksand", sans-serif;
+    margin-bottom: 25px;
+  }
+
+  .about-section h2 {
+    text-align: center;
+    font-family: "Quicksand", sans-serif;
+  }
+
+  .about-section .p {
+    text-align: center;
+    color: #192a62;
+    padding: 20px;
+    border: 3px solid #edb2d5;
+    margin-top: 30px;
+    background: #dda7c7;
+  }
+
+  .about-section p {
+    text-align: center;
+    color: #d3d3d3;
+    padding: 20px;
+    margin-top: 2px;
+  }
+
+  .about-concerts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px 43px;
+  }
+
+  .about-concerts h2 {
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    font-family: "Quicksand", sans-serif;
+    font-size: 1.2em;
+    color: #530459;
+  }
+
+  .about-concerts hr {
+    width: 20px;
+  }
+
+  .about-concerts .mobile {
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  .about-concerts .desktop {
+    display: none;
+  }
+
+  .about-concerts img {
+    height: 120px;
+    width: auto;
+    padding: 10px 90px;
+    margin-top: 15px;
+  }
+
+  .about-concerts p {
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  .past-events img {
+    border: none;
+    height: 151px;
+    width: 453px;
+    padding: 10px 90px;
+    margin-top: 15px;
+  }
+
+  .partners h3 {
+    color: #d3d3d3;
+    margin: -8px;
+    padding-block: 18px 20px;
+    font-size: 1em;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .header-content {
+    position: fixed;
+    width: 100%;
+    height: 7.5vw;
+    top: 0;
+    left: 0;
+    min-width: 320px;
+    background: transparent;
+    text-align: center;
+    z-index: 1001;
+  }
+
+  .header-desktop1 {
+    height: 98px;
+    background: #272a31;
+    margin-top: -10px;
+  }
+
+  .header-desktop1 ul {
+    margin: 0;
+    padding: 0.7em 8.5%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .header-desktop1 li {
+    padding: 0 10px;
+  }
+
+  .header-desktop1 a {
+    text-decoration: none;
+    font-size: 0.7em;
+    color: #fff;
+  }
+
+  footer img {
+    padding: 30px;
+    height: 140px;
+    width: auto;
+  }
+
+  .header-desktop1 img {
+    height: 20px;
+  }
+
+  .hamburger-btn {
+    display: none;
+  }
+
+  .header-two {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.5s;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16);
+    background-color: #fff;
+    margin-top: -51px;
+  }
+
+  .header-two .logo {
+    height: 50px;
+    width: auto;
+    margin-left: 50px;
+  }
+
+  .header-two .close-btn {
+    display: none;
+  }
+
+  .header-two nav {
+    padding-right: 8.5%;
+  }
+
+  .header-two ul {
+    list-style: none;
+    margin: 0;
+    padding: 0.7em 0 0.7em 0;
+    margin-left: 98px;
+  }
+
+  .header-two li {
+    display: inline-block;
+    padding: 10px;
+  }
+
+  .partners li {
+    padding: 15px;
+    margin-top: -8px;
+  }
+
+  .header-two .menu-item {
+    font-family: "Quicksand", sans-serif;
+    font-size: 0.84em;
+    font-weight: 400;
+    text-decoration-line: none;
+    color: #710879;
+    text-align: center;
+  }
+
+  .nav-item1 {
+    display: block;
+    border: 3px solid #6a1170b5;
+    padding: 12px 17px;
+  }
+
+  .header-two .concert {
+    transition: ease-in 200ms;
+    display: block;
+    color: #c872ce;
+  }
+
+  .home {
+    background-image: url(./assets/img/peakpx-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 43px;
+    min-width: 769px;
+  }
+
+  .presentation {
+    padding: 0 6.5%;
+    display: block;
+    width: 100%;
+    padding-top: 0;
+    padding-right: 0;
+    color: #d3d3d3;
+    margin-left: -10.25vw;
+    margin-top: 88px;
+  }
+
+  .venue {
+    font-size: 1.1em;
+    font-weight: 500;
+    margin: -15px;
+    margin-left: -2px;
+    max-width: 800px;
+    padding: 20px;
+    margin-top: -14px;
+  }
+
+  .text {
+    font-size: 0.9em;
+    font-weight: 500;
+    margin: -17px;
+    margin-left: 17px;
+    max-width: 800px;
+    border: 3px solid white;
+    padding: 20px;
+    margin-top: -13px;
+  }
+
+  .presentation h1 {
+    font-family: "Quicksand", sans-serif;
+    padding-top: 80px;
+    font-size: 3em;
+    font-weight: 900;
+    margin: 0;
+    margin-top: -26px;
+    margin-left: 14px;
+  }
+
+  .presentation h2 {
+    display: block;
+    font-family: "Quicksand", sans-serif;
+    margin: 0;
+    padding-block: 40px;
+    font-size: 5em;
+    font-weight: 800;
+    margin-left: 10px;
+    margin-top: -24px;
+  }
+
+  .presentation h3 {
+    display: block;
+    font-size: 4em;
+    font-weight: bold;
+    margin-top: 38px;
+    margin-left: 19px;
+    color: #deb5cd;
+  }
+
+  .schedule {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    background-image: url("./assets/img/Main-bg.png");
+  }
+
+  .schedule span {
+    width: 8%;
+    height: 4px;
+    border-radius: 4px;
+    background: #530459;
+    margin: 8px;
+  }
+
+  .schedule h2 {
+    color: #530459;
+    font-family: "Quicksand", sans-serif;
+    font-size: 1.3em;
+    margin: 12px;
+    margin-left: 13px;
+    margin-top: 17px;
+  }
+
+  .schedule h3 {
+    color: #530459;
+    font-family: "Quicksand", sans-serif;
+    font-size: 1em;
+    margin: 12px;
+    margin-left: -5px;
+    margin-top: 0;
+  }
+
+  footer p {
+    color: #530459;
+    font-size: 1.2em;
+    font-family: "Quicksand", sans-serif;
+    font-weight: bold;
+    margin-right: 59px;
+    text-align: center;
+  }
+
+  .schedule p {
+    color: #530459;
+    font-family: "Quicksand", sans-serif;
+    font-size: 0.9em;
+    margin: 8px;
+    margin-left: 0;
+    width: 156px;
+    margin-top: -5px;
+    text-align: center;
+  }
+
+  .program {
+    flex-direction: column;
+    flex-basis: 200px;
+    flex-grow: 0;
+    margin-bottom: -3px;
+    display: flex;
+    align-items: center;
+    background: #edb2d5a8;
+    border-radius: 10px;
+    margin-top: 13px;
+    margin-left: 10px;
+  }
+
+  .program-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    padding-bottom: 70px;
+    gap: 5px;
+    justify-content: center;
+  }
+
+  .img2 {
+    background-color: transparent;
+    padding: 15px;
+    height: 80px;
+    width: auto;
+    margin-left: -7px;
+  }
+
+  .img1 {
+    background-color: transparent;
+    padding: 5px;
+    height: 80px;
+    width: auto;
+    margin-left: -4px;
+  }
+
+  .schedule a {
+    display: inline-block;
+    margin: -40px auto;
+    text-decoration: none;
+    color: #fff;
+    padding: 9px;
+    background: #530459;
+    margin-bottom: 6px;
+    text-align: center;
+    width: 340px;
+    height: 42px;
+  }
+
+  .global-section {
+    padding: 20px;
+  }
+
+  .gm-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .global-section h3 {
+    text-align: center;
+    font-family: "Quicksand", sans-serif;
+    font-size: 1.5em;
+    margin-top: 12px;
+    color: #530459;
+    margin-bottom: 15px;
+  }
+
+  .global-section hr {
+    width: 50px;
+    margin: auto;
+  }
+
+  .group-member {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    margin-left: 21px;
+  }
+
+  .group-member img {
+    padding: 10px;
+    height: 172px;
+    width: 188px;
+    margin-top: 46px;
+    margin-left: 8px;
+  }
+
+  .text-content {
+    padding-left: 1em;
+    margin-left: 189px;
+    margin-top: -188px;
+    margin-bottom: 20px;
+  }
+
+  .text-content hr {
+    width: 30px;
+    margin: 13px 1px;
+  }
+
+  .text-content h3 {
+    font-family: "Quicksand", sans-serif;
+    font-size: 1.3em;
+    text-align: left;
+  }
+
+  .text-content .italic-text {
+    color: #dda7c7;
+    margin-top: 7px;
+  }
+
+  .text-content p {
+    font-size: 0.84em;
+    margin-top: 18px;
+  }
+
+  .partners {
+    background-color: #530459;
+    text-align: center;
+    font-family: "Quicksand", sans-serif;
+    font-size: 1.5em;
+    margin-top: 50px;
+  }
+
+  .partners-title {
+    color: #d3d3d3;
+    margin: -8px;
+    padding-block: 18px 20px;
+  }
+
+  .partners hr {
+    width: 40px;
+    color: #d3d3d3;
+    margin: auto;
+  }
+
+  .partners ul {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center;
+    margin: 0;
+    padding: 12px;
+    margin-top: 20px;
+  }
+
+  .partners img {
+    height: 50px;
+    width: 134px;
+    background: transparent;
+  }
+
+  footer {
+    width: 50%;
+    margin: 0px 233px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .head-one {
+    display: none;
+  }
+
+  .about-section {
+    background-image: url(./assets/img/peakpx-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    min-width: 320px;
+    padding: 60px 43px;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+    color: #d3d3d3;
+  }
+
+  .about-section-content {
+    padding: 60px 43px;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+    color: #d3d3d3;
+  }
+
+  .about-section h1 {
+    font-size: 2em;
+    font-family: "Quicksand", sans-serif;
+    margin-bottom: 15px;
+    margin-top: 70px;
+  }
+
+  .about-section h2 {
+    font-size: 4.2em;
+    text-align: center;
+    font-family: "Quicksand", sans-serif;
+  }
+
+  .about-section .p {
+    font-size: 1.3em;
+    max-width: 800px;
+    text-align: center;
+    color: #192a62;
+    padding: 20px;
+    border: 3px solid #edb2d5;
+    margin-top: 30px;
+    background: #dda7c7;
+  }
+
+  .about-section p {
+    text-align: center;
+    color: #d3d3d3;
+    padding: 20px;
+    margin-top: 13px;
+    font-size: 1.4em;
+  }
+
+  .about-concerts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px 43px;
+  }
+
+  .about-concerts h2 {
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    font-family: "Quicksand", sans-serif;
+    font-size: 1.4em;
+    color: #530459;
+  }
+
+  .about-concerts hr {
+    width: 20px;
+  }
+
+  .about-concerts .mobile {
+    display: none;
+  }
+
+  .about-concerts .desktop {
+    text-align: center;
+  }
+
+  .about-concerts img {
+    height: 192px;
+    width: auto;
+    padding: 10px 90px;
+    margin-top: 15px;
+  }
+
+  .about-concerts p {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 1.2em;
+  }
+
+  .past-events img {
+    border: none;
+    height: 222px;
+    width: 626px;
+    padding: 10px 90px;
+    margin-top: 15px;
+  }
+
+  .partners h3 {
+    color: #d3d3d3;
+    margin: -8px;
+    padding-block: 18px 20px;
+    font-size: 1em;
+  }
+}
